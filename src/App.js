@@ -15,11 +15,11 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/TechSkills" element={<TechSkills />} />
-          <Route path="/Work" element={<Work />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path={process.env.PUBLIC_URL+"/"} element={<Home />} />
+          <Route path={process.env.PUBLIC_URL+"/About"} element={<About />} />
+          <Route path={process.env.PUBLIC_URL+"/TechSkills"} element={<TechSkills />} />
+          <Route path={process.env.PUBLIC_URL+"/Work"} element={<Work />} />
+          <Route path={process.env.PUBLIC_URL+"/Contact"} element={<Contact />} />
         </Routes>
         <Footer />
       </div>
