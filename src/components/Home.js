@@ -13,14 +13,14 @@ function Home() {
         <p id="nameSlider" className="namelabel">
           <span className="text-slider-items"></span>
           <strong className="text-slider">
-            <Typed strings={["Hello, I am Janhavi Nagalkar!"]} typeSpeed={40} />
+            <Typed strings={["Hello, I am Mihir Nagalkar!"]} typeSpeed={40} />
           </strong>
         </p>
         <p className="intro-subtitle">
           <span className="text-slider-items"></span>
           <strong className="text-slider">
             <Typed
-              strings={["Front End Developer", "Software Engineer"]}
+              strings={["IT Undergrad","Aspiring Software Developer","Tech Enthusiast"]}
               typeSpeed={80}
               backDelay={1100}
               backSpeed={30}
@@ -29,8 +29,8 @@ function Home() {
           </strong>
         </p>
         <button className="myworkbtn">
-          <Link to="/Work" className="myworkbtnText">
-            View My Work
+          <Link to={process.env.PUBLIC_URL+"/Projects"} className="myworkbtnText">
+            View My Projects
           </Link>
         </button>
       </header>

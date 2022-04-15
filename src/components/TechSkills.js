@@ -1,16 +1,14 @@
 import React from "react";
 import Progressbar from "./ProgressBar";
-import { TechSkillData,EducationData } from "./MockData";
+import { TechSkillData, TechSkillData2 } from "./MockData";
 
 function TechSkills() {
   return (
     <div className="container">
       <div className="row pContainer">
+        <label className="headerLabel" style={{height:0}}>Technical Skills</label>
         <div className="col-md-6">
-          <div className="row justify-content-center">
-            <label className="headerLabel">Technical Skills</label>
-          </div>
-          <div className="mt-2">
+          <div>
             {TechSkillData && TechSkillData.length ? (
               TechSkillData.map((a) => (
                 <div className="d-flex">
@@ -19,14 +17,16 @@ function TechSkills() {
                     src={a.iconSrc}
                     alt="techIconSvgs"
                   />
-                  <div className="d-flax flex-column" style={{ width: "90%" }}>
-                    <label style={{ fontWeight: "500" }}>{a.techName}</label>
-                    <Progressbar
-                      bgcolor="#10d5ea"
-                      progress={a.progress}
-                      height={5}
-                    />
-                  </div>
+
+                  <label
+                    style={{
+                      fontWeight: "500",
+                      fontSize: "25px",
+                      marginTop: "0.75em",
+                    }}
+                  >
+                    {a.techName}
+                  </label>
                 </div>
               ))
             ) : (
@@ -36,27 +36,23 @@ function TechSkills() {
         </div>
         <div className="col-md-6">
           <div className="eduBlock">
-            <label className="headerLabel">Education</label>
-            {EducationData && EducationData.length ? (
-              EducationData.map((edu) => (
+            {TechSkillData2 && TechSkillData2.length ? (
+              TechSkillData2.map((a) => (
                 <div className="d-flex">
-                  <svg height={25} width={25} className="mt-4">
-                    <circle cx="5" cy="5" r="4" />
-                  </svg>
-                  <div>
-                    <label className="aboutInfo">
-                      <b>{edu.degree}</b>
-                    </label>
-                    <div>
-                      {edu.field !== "" && (
-                        <label className="aboutInfo">{edu.field}</label>
-                      )}
-                    </div>
+                  <img
+                    className="techIcon"
+                    src={a.iconSrc}
+                    alt="techIconSvgs"
+                  />
+                  <div className="d-flax flex-column" style={{ width: "90%" }}>
                     <label
-                      className="aboutInfo"
-                      style={edu.field === "" ? { marginTop: "0.75em" } : {}}
+                      style={{
+                        fontWeight: "500",
+                        fontSize: "25px",
+                        marginTop: "0.75em",
+                      }}
                     >
-                      {edu.school}
+                      {a.techName}
                     </label>
                   </div>
                 </div>

@@ -28,8 +28,8 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <motion.span whileHover={{ y: 5 }}>
-        <Link to="/" className="nav-logo">
-          JanhaviNagalkar
+        <Link to={process.env.PUBLIC_URL + "/" }className="nav-logo">
+          MihirNagalkar
         </Link>
       </motion.span>
       <div onClick={() => handleClick()} className="nav-icon">

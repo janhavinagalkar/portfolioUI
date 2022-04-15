@@ -2,6 +2,7 @@
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
+  display: none;
 }
 
 /* Track */
@@ -99,9 +100,9 @@
   margin-top: 1em;
 }
 .workInfoLabel {
-  font-size: 15px;
+  font-size: 18px;
   text-align: justify;
-  margin-top: 1em;
+ 
 }
 .pContainer {
   background: white !important;
@@ -109,8 +110,8 @@
   padding: 2em;
 }
 .techIcon {
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
   margin: 0.5em;
 }
 .navbar {
@@ -187,9 +188,9 @@
     brightness(102%) contrast(143%);
 }
 @media only screen and (width < 768px) {
-  .aboutTitle {
+  /* .aboutTitle {
     margin-top: 1em;
-  }
+  } */
   .eduBlock {
     margin-bottom: 4em;
   }
@@ -240,6 +241,11 @@
 }
 #navLogo a {
   color: black;
+}
+.projectTitle {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 0.5em;
 }
 .circleWithLogo {
   width: 4em;

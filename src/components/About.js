@@ -9,18 +9,16 @@ function About() {
             <label className="headerLabel aboutTitle">About Me</label>
             <div className="aboutInfo1">
               <label>
-                I am Front-end Developer over two years of experience in
-                building responsive, efficient and intuitive user interfaces for
-                web applications.
+                Hi, I am Mihir Nagalkar. 
               </label>
               <label className="mt-4">
-                I am highly motivated with experience in creating custom websites
-                with ReactJs, JavaScript, HTML5 and CSS3 and passionate about
-                using Javascript and Animation Libraries to create awesome user
-                experiences.
+              IT Undergrad with excellent problem solving skills and ability to perform well in a team and under pressure. <br/>Passionate about coding and writing good quality code and a Machine Learning enthusiast.
+               <br/> 
+                I am highly motivated and optimistic person with a lot of enthusiasm to learn new technologies.
+              
               </label>
               <label className="mt-4">
-                I love to learn and explore new arenas.
+               I love problem solving, reading and cycling.
               </label>
             </div>
           </div>
